@@ -1,0 +1,273 @@
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm cream luxury palette */
+    --background: 35 30% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 35 25% 95%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 35 30% 97%;
+    --popover-foreground: 30 10% 15%;
+
+    /* Rich gold primary */
+    --primary: 42 65% 45%;
+    --primary-foreground: 35 30% 97%;
+
+    /* Warm cream secondary */
+    --secondary: 35 20% 92%;
+    --secondary-foreground: 30 10% 20%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Cognac accent */
+    --accent: 25 55% 45%;
+    --accent-foreground: 35 30% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 42 65% 45%;
+
+    --radius: 0.25rem;
+
+    /* Custom luxury tokens */
+    --gold: 42 65% 45%;
+    --gold-light: 42 50% 70%;
+    --gold-glow: 42 60% 55%;
+    --cognac: 25 55% 45%;
+    --cream: 35 30% 97%;
+    --cream-dark: 35 20% 92%;
+    --charcoal: 30 10% 15%;
+    --leather-black: 30 8% 12%;
+    --leather-tan: 28 45% 55%;
+
+    /* Shadows */
+    --shadow-elegant: 0 4px 20px -4px hsl(30 10% 15% / 0.08);
+    --shadow-hover: 0 8px 30px -8px hsl(30 10% 15% / 0.12);
+    --shadow-gold: 0 4px 20px -4px hsl(42 65% 45% / 0.25);
+
+    /* Transitions */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Typography */
+    --font-display: "Playfair Display", Georgia, serif;
+    --font-body: "Inter", system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 8%;
+    --foreground: 35 20% 92%;
+
+    --card: 30 10% 12%;
+    --card-foreground: 35 20% 92%;
+
+    --popover: 30 10% 8%;
+    --popover-foreground: 35 20% 92%;
+
+    --primary: 42 55% 55%;
+    --primary-foreground: 30 10% 8%;
+
+    --secondary: 30 10% 15%;
+    --secondary-foreground: 35 20% 92%;
+
+    --muted: 30 10% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 25 45% 50%;
+    --accent-foreground: 35 20% 92%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 42 55% 55%;
+
+    --gold: 42 55% 55%;
+    --gold-light: 42 40% 65%;
+    --cognac: 25 45% 50%;
+    --cream: 35 20% 92%;
+    --cream-dark: 30 10% 18%;
+    --charcoal: 35 20% 92%;
+    --leather-black: 35 15% 85%;
+    --leather-tan: 28 40% 60%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .text-display {
+    font-family: var(--font-display);
+  }
+
+  .text-body {
+    font-family: var(--font-body);
+  }
+
+  .gold-text {
+    @apply text-primary;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .hover-shadow {
+    transition: var(--transition-elegant);
+  }
+
+  .hover-shadow:hover {
+    box-shadow: var(--shadow-hover);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out both;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out both;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out both;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+
+  .animate-slow-zoom {
+    animation: slowZoom 20s ease-in-out infinite alternate;
+  }
+
+  .animate-bounce-slow {
+    animation: bounceSlow 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes slowZoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes bounceSlow {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+}
