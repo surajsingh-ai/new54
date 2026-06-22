@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import brandBag from "@/assets/brand-handbags.jpg";
 import productsShowcase from "@/assets/products-showcase.jpg";
+
+const marketplaceHeroImage =
+  "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1600&q=85";
 
 const About = () => {
   const { hash } = useLocation();
@@ -30,7 +32,7 @@ const About = () => {
             </p>
           </div>
           <div className="aspect-[21/9] overflow-hidden bg-card">
-            <img src={brandBag} alt="Marketplace product showcase" className="w-full h-full object-cover" />
+            <img src={marketplaceHeroImage} alt="Assorted marketplace products and delivery boxes" className="w-full h-full object-cover" />
           </div>
         </section>
 

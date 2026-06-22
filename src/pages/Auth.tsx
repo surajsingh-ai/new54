@@ -7,11 +7,12 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 import { Eye, EyeOff, ArrowLeft, Shield } from 'lucide-react';
-import brandBag from '@/assets/brand-handbags.jpg';
 import { z } from 'zod';
 
 const emailSchema = z.string().email('Please enter a valid email address');
 const passwordSchema = z.string().min(6, 'Password must be at least 6 characters');
+const marketplaceAuthImage =
+  'https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1200&q=85';
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -156,8 +157,8 @@ const Auth = () => {
       {/* Left side - Image */}
       <div className="hidden lg:block lg:w-1/2 relative">
         <img
-          src={brandBag}
-          alt="The Ridma Luxury shopping products"
+          src={marketplaceAuthImage}
+          alt="Assorted online shopping products and delivery boxes"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/20 to-transparent" />
