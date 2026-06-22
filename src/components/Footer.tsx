@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import ridmaLogo from "@/assets/ridma-luxary-logo.svg";
 
 const Footer = () => {
   return (
@@ -32,7 +33,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h4 className="mb-4 text-xl font-black">The Ridma Luxury</h4>
+            <Link to="/" className="mb-4 inline-flex" aria-label="The Ridma Luxury home">
+              <img
+                src={ridmaLogo}
+                alt="Ridma Luxary"
+                className="h-28 w-28 rounded bg-white object-contain p-2 shadow-sm"
+              />
+            </Link>
             <p className="mb-5 text-sm leading-6 text-white/70">
               A multi-category marketplace for electronics, fashion, home, grocery, beauty, sports, books and more.
             </p>

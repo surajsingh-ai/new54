@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import SearchDialog from "@/components/SearchDialog";
 import CartButton from "@/components/CartButton";
+import ridmaLogo from "@/assets/ridma-luxary-logo.svg";
 
 const navLinks = [
   { href: "/collections?category=mobiles", label: "Mobiles" },
@@ -61,10 +62,12 @@ const Header = () => {
             )}
           </button>
 
-          <Link to="/" className="flex-shrink-0">
-            <h1 className="text-xl md:text-2xl font-black tracking-normal text-white whitespace-nowrap">
-              The Ridma Luxury
-            </h1>
+          <Link to="/" className="flex flex-shrink-0 items-center" aria-label="The Ridma Luxury home">
+            <img
+              src={ridmaLogo}
+              alt="Ridma Luxary"
+              className="h-14 w-14 rounded bg-white object-contain p-1 shadow-sm md:h-16 md:w-16"
+            />
           </Link>
 
           <button className="hidden items-center gap-1 rounded px-2 py-1 text-left text-xs hover:outline hover:outline-1 hover:outline-white/50 md:flex">

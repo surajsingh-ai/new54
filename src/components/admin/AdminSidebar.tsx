@@ -10,6 +10,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ridmaLogo from '@/assets/ridma-luxary-logo.svg';
 
 interface AdminSidebarProps {
   activeTab: string;
@@ -39,9 +40,7 @@ const AdminSidebar = ({ activeTab, onTabChange, collapsed, onCollapsedChange }: 
       {/* Logo/Brand */}
       <div className="p-4 border-b border-border flex items-center justify-between">
         {!collapsed && (
-          <div className="font-display text-lg tracking-wider">
-            SHOPVERSE
-          </div>
+          <img src={ridmaLogo} alt="Ridma Luxary" className="h-12 w-12 rounded bg-white object-contain p-1" />
         )}
         <Button
           variant="ghost"
