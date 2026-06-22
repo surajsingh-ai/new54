@@ -1,4 +1,4 @@
-# ShopVerse E-commerce
+# The Ridma Luxury E-commerce
 
 React and TypeScript multi-category e-commerce marketplace built with Vite, shadcn-ui, and Tailwind CSS.
 

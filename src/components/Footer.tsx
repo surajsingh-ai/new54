@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h4 className="mb-4 text-xl font-black">ShopVerse</h4>
+            <h4 className="mb-4 text-xl font-black">The Ridma Luxury</h4>
             <p className="mb-5 text-sm leading-6 text-white/70">
               A multi-category marketplace for electronics, fashion, home, grocery, beauty, sports, books and more.
             </p>
@@ -89,7 +89,7 @@ const Footer = () => {
 
       <div className="border-t border-white/10">
         <div className="container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-white/60 md:flex-row md:px-6 lg:px-10">
-          <p>&copy; 2026 ShopVerse. All rights reserved.</p>
+          <p>&copy; 2026 The Ridma Luxury. All rights reserved.</p>
           <div className="flex gap-5">
             <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white">Terms of Service</Link>

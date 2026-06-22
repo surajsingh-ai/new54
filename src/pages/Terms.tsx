@@ -13,7 +13,7 @@ const Terms = () => {
           <div className="prose prose-neutral max-w-none space-y-8 text-sm leading-relaxed text-muted-foreground">
             <section>
               <h2 className="font-display text-xl text-foreground mb-3">1. Acceptance of Terms</h2>
-              <p>By accessing or using the ShopVerse website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. We reserve the right to update these terms at any time, and continued use constitutes acceptance of any changes.</p>
+              <p>By accessing or using The Ridma Luxury website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. We reserve the right to update these terms at any time, and continued use constitutes acceptance of any changes.</p>
             </section>
 
             <section>
@@ -38,7 +38,7 @@ const Terms = () => {
 
             <section>
               <h2 className="font-display text-xl text-foreground mb-3">6. Intellectual Property</h2>
-              <p>All content on this website, including text, graphics, logos, images, and software, is the property of ShopVerse and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.</p>
+              <p>All content on this website, including text, graphics, logos, images, and software, is the property of The Ridma Luxury and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.</p>
             </section>
 
             <section>
@@ -48,7 +48,7 @@ const Terms = () => {
 
             <section>
               <h2 className="font-display text-xl text-foreground mb-3">8. Limitation of Liability</h2>
-              <p>To the fullest extent permitted by law, ShopVerse shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services or products. Our total liability shall not exceed the amount you paid for the product or service giving rise to the claim.</p>
+              <p>To the fullest extent permitted by law, The Ridma Luxury shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services or products. Our total liability shall not exceed the amount you paid for the product or service giving rise to the claim.</p>
             </section>
 
             <section>
@@ -58,7 +58,7 @@ const Terms = () => {
 
             <section>
               <h2 className="font-display text-xl text-foreground mb-3">10. Contact</h2>
-              <p>For questions about these Terms of Service, please contact us at legal@shopverse.example or write to: ShopVerse, Mumbai, Maharashtra 400001, India.</p>
+              <p>For questions about these Terms of Service, please contact us at legal@theridmaluxury.com or write to: The Ridma Luxury, Mumbai, Maharashtra 400001, India.</p>
             </section>
           </div>
         </div>

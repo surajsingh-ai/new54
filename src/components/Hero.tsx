@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={brandBag}
-          alt="Kaylaitalia luxury leather handbag"
+          alt="The Ridma Luxury featured product"
           className="w-full h-full object-cover scale-105 animate-slow-zoom"
         />
         {/* Modern gradient overlays - darker, richer tones */}

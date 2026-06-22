@@ -38,7 +38,7 @@ const BrandStory = () => {
             <div className="aspect-[4/5] overflow-hidden rounded-2xl">
               <img
                 src={brandBag}
-                alt="Kaylaitalia artisan craftsmanship"
+                alt="The Ridma Luxury curated product selection"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Overlay */}
@@ -81,7 +81,7 @@ const BrandStory = () => {
             
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                Born from a passion for timeless elegance, Kaylaitalia represents the pinnacle 
+                Born from a passion for premium shopping, The Ridma Luxury represents a curated selection
                 of Italian leather artistry. Each piece is meticulously handcrafted by master 
                 artisans who have perfected their craft over generations.
               </p>

@@ -22,10 +22,10 @@ const About = () => {
         {/* Hero */}
         <section className="container mx-auto px-6 lg:px-12 mb-24">
           <div className="text-center mb-16">
-            <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">About ShopVerse</p>
+            <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">About The Ridma Luxury</p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl mb-6">Built for Everyday Shopping</h1>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              ShopVerse brings popular products, useful deals, secure payments and reliable
+              The Ridma Luxury brings popular products, useful deals, secure payments and reliable
               delivery into one easy multi-category marketplace.
             </p>
           </div>

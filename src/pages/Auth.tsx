@@ -135,7 +135,7 @@ const Auth = () => {
         } else {
           toast({
             title: 'Account created!',
-            description: 'Welcome to ShopVerse.',
+            description: 'Welcome to The Ridma Luxury.',
           });
           navigate('/');
         }
@@ -157,7 +157,7 @@ const Auth = () => {
       <div className="hidden lg:block lg:w-1/2 relative">
         <img
           src={brandBag}
-          alt="ShopVerse shopping products"
+          alt="The Ridma Luxury shopping products"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/20 to-transparent" />
@@ -204,7 +204,7 @@ const Auth = () => {
               ? 'Sign in with an admin-approved account to manage the store.'
               : isLogin 
                 ? 'Sign in to access your account and continue shopping.'
-                : 'Join ShopVerse for a faster shopping experience.'}
+                : 'Join The Ridma Luxury for a faster shopping experience.'}
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">

@@ -38,7 +38,7 @@ const Privacy = () => {
 
             <section>
               <h2 className="font-display text-xl text-foreground mb-3">6. Your Rights</h2>
-              <p>You have the right to access, correct, or delete your personal data. You may also opt out of marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly. To exercise any of these rights, please email us at privacy@shopverse.example.</p>
+              <p>You have the right to access, correct, or delete your personal data. You may also opt out of marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly. To exercise any of these rights, please email us at privacy@theridmaluxury.com.</p>
             </section>
 
             <section>
@@ -48,7 +48,7 @@ const Privacy = () => {
 
             <section>
               <h2 className="font-display text-xl text-foreground mb-3">8. Contact Us</h2>
-              <p>If you have questions about this Privacy Policy, please contact us at privacy@shopverse.example or write to: ShopVerse, Mumbai, Maharashtra 400001, India.</p>
+              <p>If you have questions about this Privacy Policy, please contact us at privacy@theridmaluxury.com or write to: The Ridma Luxury, Mumbai, Maharashtra 400001, India.</p>
             </section>
           </div>
         </div>

@@ -63,7 +63,7 @@ const Header = () => {
 
           <Link to="/" className="flex-shrink-0">
             <h1 className="text-xl md:text-2xl font-black tracking-normal text-white whitespace-nowrap">
-              ShopVerse
+              The Ridma Luxury
             </h1>
           </Link>
 

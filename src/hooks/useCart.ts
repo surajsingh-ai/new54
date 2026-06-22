@@ -16,7 +16,7 @@ export interface CartItem {
   };
 }
 
-const GUEST_CART_KEY = 'kaylaitalia_guest_cart';
+const GUEST_CART_KEY = 'the_ridma_luxury_guest_cart';
 const CART_UPDATED_EVENT = 'cart-updated';
 
 const getGuestCart = (): CartItem[] => {
